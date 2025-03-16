@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+     <meta charset="UTF-8">
+     <link rel="shorcut icon" href="./icons/fav-icon.png" type="image/png">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>PODIUM NOTES ETUDIANT - JS</title>
+     <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+     <main>
+          <aside id="students-template">
+               <h2 id="title-students-list">Les etudiants : noms | notes | moyennes</h2>
+
+               <table>
+                    <thead>
+                         <tr>
+                              <th>Index(s)</th>
+                              <th>Noms(s)</th>
+                              <th>Note(s)</th>
+                              <th>Moyennes(s)</th>
+                         </tr>
+                         <tr></tr>
+                         <tr></tr>
+                         <tr></tr>
+                    <tbody id="tbody"></tbody>
+                    </thead>
+               </table>
+          </aside>
+
+          <section id="form-container"><img src="./icons/close-icon.png" alt="Icon de fermuture" id="btn-close-form">
+          </section>
+
+          <button id="add-icon" data-title="Ajouter des informations étudiants"><img src="./icons/add-icon.png"
+                    alt="Add icon"></button>
+          <button id="open-podium" data-title="TOP 3 des etudiants">
+               <img width="40" height="40" src="./icons/fav-icon.png" alt="Show Podium">
+          </button>
+
+          <section id="podium-container">
+
+               <img src="./icons/close-icon.png" alt="Close icon" id="close-podium">
+
+               <h3 class="top-3-title">Top 3 des meilleurs étudiants de la classe - 1ere, 2e et 3e place</h3>
+               <div class="box first">
+                    <img width="100" height="100" src="./icons/first-cup-icon.png" alt="premier etudiant">
+                    <div class="content-infos">
+                         <h3 id="best-student-name">-</h3>
+                         <p id="best-student-appreciation"></p>
+                         <p class="best-worst-note" id="best-student-best-note"></p>
+                         <p class="best-worst-note" id="best-student-worst-note"></p>
+                    </div>
+               </div>
+               <div class="box percents podium-content">
+                    <div class="percent percent-second">
+                         <span class="name-text" id="name-text-second"></span>
+                         <span id="percentage-text-second"></span>
+                    </div>
+                    <div class="percent percent-first">
+                         <span class="name-text" id="name-text-first"></span>
+                         <span id="percentage-text-first"></span>
+                    </div>
+                    <div class="percent percent-third">
+                         <span class="name-text" id="name-text-third"></span>
+                         <span id="percentage-text-third"></span>
+                    </div>
+               </div>
+               <div class="box left-box">
+                    <div class="box second">
+                         <img width="100" height="100" src="./icons/second-cup-icon.png" alt="dexieme etudiant">
+                         <div class="content-infos">
+                              <h3 id="seconth-student-name">-</h3>
+                              <p id="seconth-student-appreciation"></p>
+                              <p class="best-worst-note" id="seconth-student-best-note"></p>
+                              <p class="best-worst-note" id="seconth-student-worst-note"></p>
+                         </div>
+                    </div>
+                    <div class="box third">
+                         <img width="100" height="100" src=".//icons/third-cup-icon.png" alt="troisieme etudiant">
+                         <div class="content-infos">
+                              <h3 id="thirth-student-name">-</h3>
+                              <p id="thirth-student-appreciation"></p>
+                              <p class="best-worst-note" id="thirth-student-best-note"></p>
+                              <p class="best-worst-note" id="thirth-student-worst-note"></p>
+                         </div>
+                    </div>
+               </div>
+          </section>
+
+     </main>
+
+     <footer>&copy; adiou kane | JUILLET 2024</footer>
+     <script nonce src="app.js"></script>
+</body>
+
+</html>
